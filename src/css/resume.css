@@ -1,0 +1,140 @@
+#resume {
+    position: relative;
+    color: #fff;
+    padding-top: 100px;
+    margin: 3rem 0;
+}
+
+.resume-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--lightBlue-color);
+    margin-bottom: 2rem;
+  }
+
+.resume-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 600px));
+    gap: 2rem;
+}
+.resume-edu h3,
+.resume-experience h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.timelines {
+    border-left: 2px solid #dadada;
+    padding: 8px 0 8px 48px;
+  }
+  .timelines .timeline {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    padding: 16px 20px;
+    border-radius: 5px;
+    box-shadow: -26px 26px 52px #050428, 26px -26px 52px #0d0c76;
+    border-left: 2px solid #377e98;
+    margin-left: -5px;
+  }
+
+  .timelines .timeline::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    border-bottom: 2px solid #377e98;
+    left: -48px;
+    top: 8px;
+  }
+  .timelines .timeline::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #377e98;
+    left: -52px;
+    background: white;
+    top: 2px;
+  }
+
+  .education-title,
+  .experience-title {
+    margin: 0 0 8px;
+    font-size: 25px;
+  }
+  
+  .education-time,
+  .experience-time {
+    font-size: 15px;
+    margin: 0 0 8px;
+    color: var(--gray-color);
+  }
+  
+  .education-place,
+  .experience-place {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  
+  .education-description,
+  .experience-description {
+    font-size: 15px;
+    color: var(--gray-color);
+  }
+  
+  .education-description ul li {
+    padding: 7px 0;
+    list-style: none;
+  }
+
+  @media only screen and (max-width:450px) {
+    #resume {
+      padding-top: 20px;
+      margin: 2rem 0;
+  }
+    .resume-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .resume-title {
+        font-size: 1rem;
+    }
+
+    .timelines {
+        padding: 4px 0 4px 25px;
+      }
+
+      .timelines .timeline::before {
+        width: 25px;
+        left: -25px;
+      }
+
+      .timelines .timeline::after {        
+        left: -28px;
+      }
+    .resume-edu h3,
+  .resume-experience h3 {
+  font-size: 1.5rem;
+ 
+   }
+    .education-title,
+    .experience-title {
+     
+      font-size: 20px;
+    }
+    .education-time,
+  .experience-time {
+    font-size: 12px;
+  }
+  .education-place,
+  .experience-place {
+    font-size: 15px;
+  }
+  .education-description,
+  .experience-description {
+    font-size: 12px;
+  }
+  }

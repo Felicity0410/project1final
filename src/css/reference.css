@@ -1,0 +1,117 @@
+#reference {
+  position: relative;
+  color: #fff;
+  padding-top: 100px;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reference-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--lightBlue-color);
+}
+
+.card-container {
+  margin: 1rem;
+  max-width: 700px;
+}
+
+.reference-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 300px));
+  padding: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.reference-card .card-photo {
+  border-radius: 10%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+
+.reference-card .card-photo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.reference-card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+.reference-card .card-info h4 {
+  font-size: 1.5rem;
+}
+.reference-card .card-info span {
+  font-size: 15px;
+  padding: 0.5rem;
+  color: var(--gray-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 450px) {
+  #reference {
+    padding: 30px 0;
+    margin: 0;
+  }
+  .reference-card .card-photo {
+    display: none;
+  }
+  .reference-card {
+    padding: 0;
+  }
+  .reference-title {
+    font-size: 1rem;
+  }
+  .card-container {
+    margin: 0.5rem;
+  }
+
+  .reference-card .card-info h4 {
+    font-size: 1rem;
+  }
+  .reference-card .card-info span {
+    font-size: 12px;
+    padding: 3px;
+    margin-bottom: 5px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -6px;
+    left: 0;
+    width: 45%;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+  }
+}
