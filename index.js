@@ -14,3 +14,8 @@ const observer = new IntersectionObserver(entries => {
   animatedElements.forEach(animatedElement => {
     observer.observe(animatedElement);
   });
+
+  function scrollToContact () {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({behavior: "smooth"})
+  }
