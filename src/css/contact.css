@@ -2,13 +2,14 @@
   position: relative;
   color: #fff;
   padding-top: 100px;
-  margin: 3rem 0;
+  margin: 3rem;
 }
 
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .contact-container .contact-title p {
@@ -34,21 +35,22 @@
 
 .contact-form .contact-info .contact-name,
 .contact-form .contact-info .contact-email {
-  min-width: 250px;
+  min-width: 200px;
   max-width: 400px;
 }
 
 .contact-form .contact-info .contact-name label,
 .contact-form .contact-info .contact-email label,
 .contact-form .contact-message label {
-  font-size: 20px;
+  font-size: 2vw;
+  
 }
 
 .contact-form .contact-info .contact-name input,
 .contact-form .contact-info .contact-email input,
 .contact-form .contact-message input {
   width: 100%;
-  font-size: 20px;
+  font-size: 2vw;
   padding: 10px;
   border-radius: 5px;
 }
@@ -69,7 +71,7 @@
   margin: 10px 0;
 }
 .contact-form .contact-submit-button input {
-  font-size: 1rem;
+  font-size: 1.5vw;
   text-decoration: none;
   color: white;
   background-color: var(--darkBlue-color);

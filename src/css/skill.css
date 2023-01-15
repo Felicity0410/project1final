@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-    margin-top: 2rem;
+    margin: 2rem
 }
 
 .skill-card {
@@ -43,11 +43,11 @@
     justify-content: center;
   }
   .skill-card .card-image-container i {
-    font-size: 4rem;
+    font-size: 4vw;
   }
   .skill-card p {
     color: var(--font-gray-color);
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     text-align: center;
     padding: 20px;
   }

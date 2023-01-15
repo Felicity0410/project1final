@@ -15,14 +15,15 @@
   color: var(--lightBlue-color);
 }
 
-.card-container {
+
+.swiper-wrapper.card-container {
   margin: 1rem;
-  max-width: 700px;
+  width: 60vw;
 }
 
 .reference-card {
   display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 300px));
+  grid-template-columns: 1fr 1fr;
   padding: 30px;
   align-items: center;
   justify-items: center;
@@ -34,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20vw;
   max-width: 250px;
 }
 
@@ -50,10 +52,10 @@
   text-align: center;
 }
 .reference-card .card-info h4 {
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 .reference-card .card-info span {
-  font-size: 15px;
+  font-size: 1.3vw;
   padding: 0.5rem;
   color: var(--gray-color);
 }
@@ -62,6 +64,11 @@
 .swiper-button-prev {
   color: white;
 }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3vw;
+}
+
 
 .swiper-pagination-bullet {
   width: 15px;
@@ -72,21 +79,26 @@
 @media only screen and (max-width: 450px) {
   #reference {
     padding: 30px 0;
-    margin: 0;
+    margin: 0 auto;
   }
+  
+  .reference-card {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
   .reference-card .card-photo {
     display: none;
   }
-  .reference-card {
-    padding: 0;
-  }
+
   .reference-title {
     font-size: 1rem;
   }
-  .card-container {
+  /* .card-container {
     margin: 0.5rem;
-  }
-
+  } */
+  
   .reference-card .card-info h4 {
     font-size: 1rem;
   }
@@ -106,8 +118,6 @@
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
     bottom: -6px;
-    left: 0;
-    width: 45%;
   }
   .swiper-pagination-bullet {
     width: 10px;
