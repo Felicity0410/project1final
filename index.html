@@ -11,7 +11,7 @@
       href="./src/images/nurse1.ico"
       type="image/x-icon"
     />
-    <title>Sunny - Personal Resume Website</title>
+    <title>Sunny Personal Resume Website</title>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -22,11 +22,10 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
     <!-- NAV BAR START -->
     <nav>
       <div class="container">
-        <div class="logo">
+        <div class="nav-logo">
           <i class="uil uil-user-nurse"></i>
           <p>MY<span>SPACE</span></p>
         </div>
@@ -64,6 +63,18 @@
             <i class="uil uil-linkedin"></i>
           </a>
         </div>
+        <div id="side-nav" class="side-nav" hidden>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skill">Skill</a>
+          <a href="#resume">Resume</a>
+          <a href="#reference">Reference</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div id="nav-sidebar-button" hidden>
+          <span onclick="openNav()">&#9776</span>
+        </div>
       </div>
     </nav>
     <!-- NAV BAR END -->
@@ -78,7 +89,7 @@
             </h2>
             <p class="person-job keywords">Nurse & Aged Carer</p>
 
-            <a href="javascript:scrollToContact()" >Get Connected</a>
+            <a href="javascript:scrollToContact()">Get Connected</a>
           </div>
           <div class="home-right">
             <div class="person-photo">
@@ -170,7 +181,7 @@
           <p class="skill-title">Skills</p>
 
           <div class="skill-container animated-element">
-            <div class="skill-card ">
+            <div class="skill-card">
               <div class="card-image-container">
                 <i class="uil uil-chat-bubble-user"></i>
               </div>

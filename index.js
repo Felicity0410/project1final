@@ -19,3 +19,29 @@ const observer = new IntersectionObserver(entries => {
     const contact = document.getElementById('contact')
     contact.scrollIntoView({behavior: "smooth"})
   }
+
+const navButton = document.querySelector('#nav-sidebar-button')
+const sideNav = document.querySelector('#side-nav')
+
+function updateNavbar() {
+  if (window.innerWidth <= 450) {
+    navButton.removeAttribute('hidden')
+      sideNav.removeAttribute('hidden')
+  } else {
+    navButton.setAttribute('hidden', 'true')
+      sideNav.setAttribute('hidden', true)
+  }
+}
+
+window.addEventListener('resize', updateNavbar)
+updateNavbar()
+
+function openNav() {
+  sideNav.style.width = "150px";
+  navButton.style.marginLeft = "150px";
+}
+
+function closeNav() {
+  sideNav.style.width = "0";
+  navButton.style.marginLeft= "0";
+}

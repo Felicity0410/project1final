@@ -76,7 +76,8 @@
       }
 
       #skill {
-        padding-top: 0;
+        padding-top: 5rem;
+        margin: 0;
     }
 
     #skill>p {

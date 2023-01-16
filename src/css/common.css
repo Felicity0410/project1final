@@ -58,12 +58,17 @@ body {
     border: none;
     }
 
-/* ::-webkit-scrollbar {
-    background-color: var(--lightBlue-color);
-} */
+
 
 .container {
     width: 80%;
-    max-width: 1920px;
+    max-width: 1300px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:450px){
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
 }
